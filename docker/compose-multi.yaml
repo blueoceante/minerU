@@ -15,7 +15,6 @@ services:
     image: mineru-sglang:latest
     container_name: mineru-api-1
     restart: always
-    profiles: ["api-1"]
     ports:
       - 8001:8000
     environment:
@@ -45,7 +44,6 @@ services:
     image: mineru-sglang:latest
     container_name: mineru-api-2
     restart: always
-    profiles: ["api-2"]
     ports:
       - 8002:8000
     environment:
